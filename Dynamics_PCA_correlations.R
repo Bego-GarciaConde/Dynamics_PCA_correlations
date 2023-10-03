@@ -8,12 +8,12 @@ library(ggplot)
 
 
 
-datos <- read.table("10-20kpc_dynamic_data_1step.csv", header = TRUE,
+datos <- read.table("Data/10-20kpc_dynamic_data_1step.csv", header = TRUE,
                     sep = ",",row.names = 1)
-inc_ellipsoid <- read.table("inclination_ellipsoid_10_20_1step.csv", header = TRUE,
+inc_ellipsoid <- read.table("Data/inclination_ellipsoid_10_20_1step.csv", header = TRUE,
                     sep = ",",row.names = 1)
 
-gas_inclination <- read.table("gas_inclination.txt", header = FALSE)
+gas_inclination <- read.table("Data/gas_inclination.txt", header = FALSE)
 head(gas_inclination)
 #Adding the extra columns to the main data frame
 
